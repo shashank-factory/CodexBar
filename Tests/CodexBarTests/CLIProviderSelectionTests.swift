@@ -47,7 +47,7 @@ struct CLIProviderSelectionTests {
         let selection = CodexBarCLI.providerSelection(
             rawOverride: nil,
             enabled: [.codex, .claude, .zai, .cursor, .gemini, .antigravity])
-        #expect(selection.asList == [.codex, .claude, .zai, .cursor, .gemini, .antigravity])
+        #expect(selection.asList == [.codex, .claude, .zai, .cursor, .gemini, .antigravity, .factory])
     }
 
     @Test
